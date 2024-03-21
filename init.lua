@@ -1,9 +1,3 @@
-vim.g.mapleader = " "
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
-
 -- Verify if we have installed lazyvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -20,4 +14,5 @@ vim.opt.rtp:prepend(lazypath)
 
 local opts = {}
 
+require("settings")
 require("lazy").setup("plugins")
