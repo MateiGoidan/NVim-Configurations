@@ -3,6 +3,7 @@
 vim.g.mapleader = " "
 
 vim.wo.relativenumber = true
+vim.wo.nu = true
 
 vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
