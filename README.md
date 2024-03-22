@@ -1,4 +1,4 @@
-# NVim-Configurations/
+# NVim-Configurations
 
 <a href="https://dotfyle.com/MateiGoidan/nvim-configurations"><img src="https://dotfyle.com/MateiGoidan/nvim-configurations/badges/plugins?style=flat" /></a>
 <a href="https://dotfyle.com/MateiGoidan/nvim-configurations"><img src="https://dotfyle.com/MateiGoidan/nvim-configurations/badges/leaderkey?style=flat" /></a>
