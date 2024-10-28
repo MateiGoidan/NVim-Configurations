@@ -34,6 +34,9 @@ return {
       lspconfig.pyright.setup({
         capabilities = capabilities,
       })
+      lspconfig.jdtls.setup({
+        capabilities = capabilities,
+      })
       -- lspconfig.rust_analyzer.setup({})
 
       -- Look on the github page to configure more keymaps!
@@ -49,7 +52,7 @@ return {
     config = function()
       vim.g.lspTimeoutConfig = {
         stopTimeout = 1000 * 60 * 5, -- ms, timeout before stopping all LSPs
-        startTimeout = 1000,     -- ms, timeout before restart
+        startTimeout = 1000,         -- ms, timeout before restart
         silent = false,
       }
     end,
@@ -66,4 +69,8 @@ return {
     -- For the Java LSP
     "mfussenegger/nvim-jdtls",
   },
+  {
+    -- For the Python LSP
+    'HallerPatrick/py_lsp.nvim'
+  }
 }
