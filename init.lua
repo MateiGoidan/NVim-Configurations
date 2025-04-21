@@ -11,5 +11,11 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+vim.api.nvim_create_user_command("BuildCalc", function()
+  os.execute(
+    "mkdir -p bin && gcc ~/Programming/C/Linux/MiniCalc/MiniCalc/main.c -o ~/Programming/C/Linux/MiniCalc/MiniCalc/bin/MiniCalc -lX11 && ~/Programming/C/Linux/MiniCalc/MiniCalc/bin/MiniCalc"
+  )
+end, {})
+
 require("settings")
 require("lazy").setup("plugins")
